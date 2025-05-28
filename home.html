@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crave-ins</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="image2.jpeg.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand">Crave-in</a>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#review">Review</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <header>
+    <h1>Crave-in</h1>
+    <p><i class="fa-solid fa-cake-candles"></i> Delicious cakes & brownies made with love <i
+        class="fa-solid fa-cake-candles"></i></p>
+    <p>Satisfy the craving within</p>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>At <span class="name">Crave-in!</span> We're passionate about creating baked goods that not only taste amazing
+        but also bring joy to your special moments whether you're celebrating a birthday,anniversary, or just need a
+        pick-me-up, we've got you covered!</p>
+    </section>
+
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="product-card"  data-product-key="doubleLayeredCake" data-name="Double Layered Cake" data-sizes='[
+  {"size":"Small (6 inches)", "price":"$20"},
+  {"size":"Medium (8 inches)", "price":"$35"},
+  {"size":"Large (10 inches)", "price":"$50"}
+]'>
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80"
+          alt="Double-layered cake" />
+        <h3>Double Layered Cake(Butter Cream)</h3>
+        <p>A rich, double-layered cake filled and frosted with smooth, velvety buttercream. Perfect for celebrations or
+          sweet moments.</p>
+      </div>
+
+      <div class="product-card"  data-product-key="brownies" data-name="Classic Brownies" data-sizes='[
+  {"size":"5 pieces", "price":"₦6,000"},
+ {"size":"10 pieces ", "price":"₦12,000"},
+  {"size":"20 pieces", "price":"₦24,000"}
+]'>
+        <img src="BROWNIE.JPEG" alt="Brownies" />
+        <h3>Classic Brownies</h3>
+        <p>Fudgy, chocolatey brownies with a crispy top.</p>
+      </div>
+
+      <div class="product-card" data-product-key="cupcakes" data-name="Cup Cakes" data-sizes='[
+ {"size":"Box of 4", "price":"Buttercream(₦6,000)  Whipped cream(₦8,00)"},
+ {"size":"Half dozen", "price":"Buttercream(₦8,000)  Whipped cream(₦12,00)"},
+ {"size":"Full dozen", "price":"Buttercream(₦15,000)  Whipped cream(₦23,000)"}
+]'>
+        <img src="cupcake.jpeg" alt="Cup Cake" />
+        <h3>Cup Cakes</h3>
+        <p>Velvety soft cake with cream frosting.</p>
+      </div>
+
+      <div class="product-card" data-product-key="bentoCake" data-name="Bento Cakes" data-sizes='[
+  {"size":"4 mini", "price":"Buttercream(₦6,000)  Whipped cream(₦7,500)"},
+  {"size":"5 mini", "price":"Buttercream(₦7,000)  Whipped cream(₦8,500)"}
+]'>
+        <img src="bento.jpeg" alt="Bento cake" />
+        <h3>Bento Cakes</h3>
+        <p>A mini cake packed with flavor and charm — perfect for gifting or indulging in a personal treat, beautifully
+          boxed and customizable.</p>
+      </div>
+
+      <div class="product-card"  data-product-key="strawberryRolls" data-name="Straw Berry Rolls" data-sizes='[
+ {"size":"Box of 4", "price":"₦8,500"},
+ {"size":"Box of 6 ", "price":"₦12,000"},
+  {"size":"Box of 12", "price":"₦23,500"}
+]'>
+        <img src="strawberry.jpeg" alt="strawberry roll" />
+        <h3>Straw Berry Rolls</h3>
+        <p>Light sponge cake rolled with fresh strawberry filling and a touch of cream — sweet, fruity, and irresistibly
+          soft.</p>
+      </div>
+
+      <div class="product-card" data-product-key="cinnamonRolls" data-name="Cinnamon Roll" data-sizes='[
+  {"size":"Box of 4", "price":"₦7,000"},
+  {"size":"Box of 6 ", "price":"₦10,000"},
+   {"size":"Box of 12", "price":"₦20,000"}
+
+]'>
+        <img src="cinnamon.jpeg" alt="Cinamon Roll" />
+        <h3>Cinnamon Roll</h3>
+        <p>Soft, fluffy rolls swirled with cinnamon sugar — a cozy classic in every bite.</p>
+      </div>
+
+      <h2>More Coming Soon</h2>
+    </section>
+    <section id="order">
+      <h2>Place an Order</h2>
+<form action="https://formsubmit.co/craveintoni@gmail.com" id="order-form" class="order-form">
+
+  <label for="product">Select Product:</label>
+  <select name="product" id="product" required>
+    <option value="">choose an item</option>
+    <option value="doubleLayeredCake">Double Layered Cake</option>
+    <option value="cupcakes">Cupcakes</option>
+    <option value="bentoCake">Bento Cake</option>
+    <option value="brownies">Brownies</option>
+    <option value="cinnamonRolls">Cinnamon Rolls</option>
+    <option value="strawberryRolls">Strawberry Rolls</option>
+  </select>
+
+  <div id="flavor-container" >
+    <label for="flavor">Choose Flavor:</label>
+    <select name="flavor" id="flavor"></select>
+  </div>
+
+  <div id="type-container" >
+    <label for="type">Choose Type:</label>
+    <select name="type" id="type"></select>
+  </div>
+
+  <div id="size-container" >
+    <label for="size">Choose Size:</label>
+    <select name="size" id="size"></select>
+  </div>
+
+  <div id="quantity-container">
+    <label for="quantity">Choose Quantity:</label>
+    <select name="quantity" id="quantity"></select>
+  </div>
+
+  <div style="margin-top:10px;">
+    <label for="name">Your Name:</label>
+    <input type="text" name="name" id="name" required />
+  </div>
+
+  <div style="margin-top:10px;">
+    <label for="phone">Phone Number:</label>
+    <input type="tel" name="phone" id="phone" required />
+  </div>
+  <div>
+     <label for="email">Email:</label>
+<input type="email" id="email" placeholder="Your email" required />
+
+  </div>
+
+  <div style="margin-top:10px;">
+    <label for="date">Pickup/Delivery Date:</label>
+    <input type="date" name="date" id="date" required />
+  </div>
+
+  <div >
+    <label for="notes">Special Instructions:</label>
+    <textarea name="notes" id="notes" rows="4"></textarea>
+  </div>
+<div >
+   <p style="text-align: center; font-weight:600;">Please all orders should be made atleast 12 hours before expected!</p>
+</div>
+  <div >
+    <strong>Price: ₦<span id="price" name="price">0</span></strong>
+  </div>
+
+  <button type="submit" style="margin-top:15px;">Submit Order</button>
+
+  <div id="form-message" style="margin-top: 1em;"></div>
+</form>
+
+      <div class="whatsapp-order">
+        <p>Prefer to chat? Order via WhatsApp:</p>
+        <button type="button" onclick="sendWhatsAppMessage()" class="whatsapp-button" id="whatsapp-button">
+          <i class="fa-brands fa-whatsapp"></i> Message Us
+        </button>
+      </div>
+
+    </section>
+    <section id="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-card">
+        <p>"The best cakes in town! So fresh and beautifully decorated!"</p>
+        <span>- Okunola Babatola, Ilorin</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"The cinnamon rolls are absolutely addictive. Highly recommend!"</p>
+        <span>- David Okunola, Kwara</span>
+      </div>
+    </section>
+    <section id="review">
+      <h2>Leave us a Review</h2>
+      <form
+  method="POST"
+  class="review-form"
+  id="review-form"
+>
+  <label for="name">Your Name:</label>
+  <input
+    placeholder="enter your name"
+    type="text"
+    name="name"
+    id="name1"
+    required
+  />
+  <label for="review">Your Review:</label>
+  <textarea
+    placeholder="what do you think?"
+    name="review"
+    id="review"
+    rows="3"
+    required
+  ></textarea>
+  <button type="submit">Send Review</button>
+  
+</form>
+ <div id="form-message"></div>
+
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p style="text-align:center;">Questions? Orders? Reach out via instagram at
+        <a href="https://www.instagram.com/_crave_in/" target="_blank"> <i class="fa-brands fa-square-instagram"></i> CRAVE-IN</a>
+      </p>
+      <p style="text-align:center;">
+        or place a call at <i class="fa-solid fa-phone"></i></i> : 09026738391, 08021473281
+      </p>
+      <p style="text-align:center;">
+        <i class="fa-solid fa-location-dot"></i> :Tanke,Ilorin,Kwara state.
+      </p>
+    </section>
+  </main>
+  <script src="whatsapp.js"></script>
+  <!-- Product Card Modal -->
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+    <span id="modal-close" class="modal-close">&times;</span>
+    <h3 id="modal-product-name"></h3>
+
+    <div id="modal-flavor-container" style="display:none;">
+      <label for="modal-flavor-select">Flavor:</label>
+      <select id="modal-flavor-select"></select>
+    </div>
+
+    <div id="modal-type-container" style="display:none;">
+      <label for="modal-type-select">Type:</label>
+      <select id="modal-type-select"></select>
+    </div>
+
+    <div id="modal-size-container" style="display:none;">
+      <label for="modal-size-select">Size:</label>
+      <select id="modal-size-select"></select>
+    </div>
+
+    <div id="modal-quantity-container" style="display:none;">
+      <label for="modal-quantity-select">Quantity:</label>
+      <select id="modal-quantity-select"></select>
+    </div>
+
+    <button id="modal-order-button" class="order-button">Place Order</button>
+     
+  </div>
+  
+</div>
+
+<!-- Paystack & EmailJS Scripts -->
+<script src="https://js.paystack.co/v1/inline.js"></script>
+
+  <script src="javascript.js"></script>
+</body>
+
+</html>
